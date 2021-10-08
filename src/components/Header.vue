@@ -2,11 +2,11 @@
     <header>
         <h1>sprume</h1>
         <nav>
-            <transition name="fade" mode="out-in">
+            <transition name="button" mode="out-in">
                 <g-link v-if="$route.path == `/`" to="/gallery/" class="far fa-images" key="gallery"/>
                 <g-link v-else class="returner fas fa-arrow-left" to="/" key="return"/>
             </transition>
-            <transition name="fade" mode="out-in">
+            <transition name="button" mode="out-in">
                 <g-link v-if="$route.path == `/info/`" to="/gallery/" class="far fa-images" key="gallery" />
                 <g-link v-else to="/info/" class="fas fa-info" key="info" />
             </transition>
@@ -42,19 +42,31 @@ nav {
     justify-content: space-between;
     gap: 10px;
 }
+
 nav a {
+    display: inline-block;
     width: 20px;
     padding: 0.4em;
     padding-left: 0.8em;
     padding-right: 0.8em;
     border-radius: 2em;
     background-color: white;
+
+    transform: none;
     border: 4px solid black;
+    outline: 0px solid white;
+    transition: all 0.2s;
 }
 
-nav a.returner {
-    color: white;
-    background-color: var(--spreen);
+nav a:hover {
+    transform: translate(-2px, -2px);
+    border: 4px solid var(--spreen);
+}
+
+nav a:active {
+    transform: translate(0px, 0px);
+    outline: 4px solid var(--sprange);
+    border: 2px solid white;
 }
 
 nav a i {

@@ -12,7 +12,7 @@ export default {
     Visualizer
   },
   metaInfo: {
-    title: 'Hello, world!'
+    title: 'Home'
   }
 }
 </script>

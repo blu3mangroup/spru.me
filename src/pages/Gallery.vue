@@ -69,7 +69,7 @@
                 :id="'container_' + image.id"
                 v-on:click="show(image)"
               >
-                  <img :src="image.url + '?tr=n-gallery'" :id="'image_' + image.id" />
+                  <LazyImg :src="image.url + '?tr=n-thumbnail'" :id="'image_' + image.id" />
               </figure>
 <!--</transition-group>-->
             </div>
@@ -94,7 +94,7 @@
               :class="image.tags.join(' ')"
               :href="image.url"
             >
-                <img :src="image.url + '?tr=n-gallery'" :id="image.id" loading="lazy" />
+                <img :src="image.url + '?tr=n-thumbnail'" :id="image.id" loading="lazy" />
             </figure>
           </div>
 
@@ -178,6 +178,7 @@ query {
 <script>
 import 'viewerjs/dist/viewer.css'
 import { component as Viewer } from "v-viewer"
+import LazyImg from "~/components/LazyImg.vue"
 
 export default {
   mounted() {
@@ -200,13 +201,13 @@ export default {
     for (var year of this.years) {
       this.sortedImages.push( {year: year, images: this.allImages.filter(image => image.year == year)} )
     }
-
   },
   components: {
-    Viewer
+    Viewer,
+    LazyImg
   },
   metaInfo: {
-    title: 'Sprume Gallery'
+    title: 'Gallery'
   },
   data() {
     return {
