@@ -1,0 +1,18 @@
+    {
+      use: 'gridsome-plugin-image-cdn',
+      options: {
+        site: {
+          baseUrl: 'https://spru.me'
+        },
+        cdn: {
+          baseUrl: 'https://ik.imagekit.io/enj0y/sprume',
+          preset: 'imageKit'
+        },
+        types: [
+          {
+            //typeName: 'artworks',
+            //sourceField: 'src'
+          }
+        ]
+      }
+    }
