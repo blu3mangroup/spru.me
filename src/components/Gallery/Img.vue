@@ -5,6 +5,7 @@
 <script>
 export default {
   props: ['src'],
+  name: 'LazyImg',
   data() {
     return {
         observer: null,

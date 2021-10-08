@@ -4,6 +4,8 @@
     --spreen: #2C905A;
 }
 
+@import url('http://fonts.cdnfonts.com/css/ninifont-2');
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -13,6 +15,10 @@ body {
     padding-top: 220px;
     overflow-y: scroll;
     overflow-x: hidden;
+}
+
+h1 {
+    font-family: 'ninifont', sans-serif;
 }
 
 a {
