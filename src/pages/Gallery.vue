@@ -32,23 +32,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-@import url('http://fonts.cdnfonts.com/css/ninifont-2');
-
-/*-- #quality:checked ~ .galleryBlock .galleryGrid figure {
-  display: none;
-}
-
-#quality:checked ~ .galleryBlock .galleryGrid figure.Quality {
-  display: block;
-}
-
-#naughty ~ .galleryBlock .galleryGrid figure.Naughty {
-  display: none;
-}
-
-#naughty:checked ~ .galleryBlock .galleryGrid figure.Naughty {
-  display: block;
-} --*/
-</style>

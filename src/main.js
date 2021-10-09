@@ -15,4 +15,10 @@ export default function (Vue, { router, head, isClient }) {
     crossorigin: 'anonymous'
   })
 
+  head.link.push({
+    rel: 'stylesheet',
+    href: 'https://fonts.cdnfonts.com/css/ninifont-2',
+    crossorigin: 'anonymous'
+  })
+
 }

@@ -176,12 +176,6 @@ export default {
 </script>
 
 <style scoped>
-@import url('http://fonts.cdnfonts.com/css/ninifont-2');
-
-h1 {
-  font-family: 'ninifont', sans-serif; 
-}
-
 .galleryBlock {
   width: 100%;
 }
@@ -203,13 +197,11 @@ h1 {
 }
 
 h1 {
+  font-family: 'ninifont', sans-serif; 
   text-align: center;
   font-family: 'ninifont', sans-serif; 
   color: var(--sprange);
-  /*--
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  --*/
+  -webkit-text-stroke-width: 0px;
   font-size: 4em;
   margin-top: 0.2em;
   font-weight: 200;
