@@ -18,6 +18,7 @@ export default {
 </script>
 
 <style>
+@import url('http://fonts.cdnfonts.com/css/ninifont-2');
 .home {
   margin: auto;
   width: 80%;

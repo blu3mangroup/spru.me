@@ -45,6 +45,8 @@ export default {
 </script>
 
 <style>
+@import url('http://fonts.cdnfonts.com/css/ninifont-2');
+
 .header {
     position: absolute;
     text-align: center;

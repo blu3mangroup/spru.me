@@ -176,6 +176,12 @@ export default {
 </script>
 
 <style scoped>
+@import url('http://fonts.cdnfonts.com/css/ninifont-2');
+
+h1 {
+  font-family: 'ninifont', sans-serif; 
+}
+
 .galleryBlock {
   width: 100%;
 }
